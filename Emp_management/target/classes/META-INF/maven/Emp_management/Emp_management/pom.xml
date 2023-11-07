@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Emp_management</groupId>
+  <artifactId>Emp_management</artifactId>
+  <version>1.0.0-RELEASE</version>
+  
+  <properties>
+		<maven.compiler.target>20</maven.compiler.target>
+		<maven.compiler.source>20</maven.compiler.source>
+
+		<!-- following tag name is userdefined name -->
+
+		<mysql.version>8.0.29</mysql.version>
+		<jackson.version>2.15.2</jackson.version>
+
+
+	</properties>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${jackson.version}</version>
+
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+
+		</dependency>
+	</dependencies>
+
+  <build>
+	    <finalName>EmployeeManagementApp</finalName>
+    
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+		    <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>20</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
